@@ -3,28 +3,16 @@
 //a = 2 b = 10 -> max = 10
 //a = -9 b = -3 -> max = -3
 
-Console.WriteLine("Введи 2 числа и мы тебе скажем какое из них больше");
-int a, b;
-Console.WriteLine("Введи свое первое число - ");
-a = Convert.ToInt32(Console.Read());
-Console.WriteLine("Введи свое второе число - ");
-b = Convert.ToInt32(Console.Read());
-bool Chto0 = a > b;
-bool Chto1 = a == b;
-bool Chto2 = a < b;
- 
-if (Chto0)
+Console.WriteLine("Введи свое первое число, a ");
+int a = int.Parse(Console.ReadLine());
+Console.WriteLine("Введи свое второе число, b ");
+int b = int.Parse(Console.ReadLine());
+
+if (a > b)
 {
-Console.WriteLine($"Число {a} больше чем {b}");
-}
-else if (Chto1)
-{
-Console.WriteLine($"Числа {a} и {b} равны");
+  Console.Write($"a = {a}; b = {b} -> max = {a} ");
 }
 else
 {
-Console.WriteLine($"Число {b} больше чем {a}");
+    Console.Write($"a = {a}; b = {b} -> max = {b} ");
 }
-
-
-
